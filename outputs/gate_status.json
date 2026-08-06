@@ -1,0 +1,54 @@
+{
+  "gates": [
+    {
+      "gate": "JEC0",
+      "result": "18 hashed read-only sources and one convention map",
+      "status": "pass"
+    },
+    {
+      "gate": "JEC1",
+      "result": "shear equation and integrated identity close exactly",
+      "status": "pass"
+    },
+    {
+      "gate": "JEC2",
+      "result": "full parent/C1 extrinsic curvature closes by two methods and Israel residual is zero",
+      "status": "pass"
+    },
+    {
+      "gate": "JEC3",
+      "result": "C1 conservation, orientation, turning, and complete EF chart checks pass",
+      "status": "pass"
+    },
+    {
+      "gate": "JEC4",
+      "result": "B0 Cartan reduction and torsion-free/Israel limit pass within declared scope",
+      "status": "pass"
+    },
+    {
+      "gate": "JEC5",
+      "result": "S1 local Darmois, constraint, and data ledger reproduced",
+      "status": "pass"
+    },
+    {
+      "gate": "JEC6",
+      "result": "N2 baseline, tight repeat, and both perturbation grids reproduced",
+      "status": "pass"
+    },
+    {
+      "gate": "JEC7",
+      "result": "TEST 008 exact unit and numerical calibration reproduced",
+      "status": "pass"
+    },
+    {
+      "gate": "JEC8",
+      "result": "seven load-bearing claim rows contain scope, controls, limitations, and wording bounds",
+      "status": "pass"
+    }
+  ],
+  "highest_completed_gate": "JEC8",
+  "outcome": "JEC-A",
+  "paper_eligibility": "eligible for novelty review and scoped drafting",
+  "scope": "Paper closure only; not evidence for a child universe or physical transition.",
+  "test": "TEST_022_JUNCTION_EC_PAPER_DERIVATIONAL_CLOSURE"
+}

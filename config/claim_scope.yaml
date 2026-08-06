@@ -1,0 +1,17 @@
+allowed:
+  - "curvature-sourced shear for isotropic effective pressure"
+  - "ordinary exterior timelike angular obstruction for C0 and C1"
+  - "full C1 surface tensor and conservation only if JEC2-JEC3 pass"
+  - "unpolarized B0 torsion non-repair under declared boundary assumptions"
+  - "conditional local S1 initial data and bounded evolution"
+  - "volume expansion without baseline areal turning"
+  - "standard thermal SM-like sharp Weyssenhoff exclusion under TEST 008 assumptions"
+prohibited:
+  - "bounce"
+  - "nonsingular child universe"
+  - "global parent-child junction"
+  - "mass transfer"
+  - "time reversal"
+  - "all Einstein-Cartan junctions fail"
+  - "all spin matter fails"
+

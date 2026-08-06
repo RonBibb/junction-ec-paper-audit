@@ -1,0 +1,82 @@
+{
+  "convention_reversal": "Simultaneously reverse both normals and exchange jump order; DeltaK and physical Sigma are unchanged.",
+  "convention_reversal_verified": true,
+  "energy_condition_identities": {
+    "DEC": "sigma>=|p_s|",
+    "NEC": "sigma+p_s>=0",
+    "SEC_2plus1": "NEC and sigma+2p_s>=0",
+    "WEC": "sigma>=0 and NEC",
+    "sigma_plus_2p": "c^4/(4 pi G) DeltaKtau",
+    "sigma_plus_p": "c^4/(8 pi G)(DeltaKtau-DeltaKtheta)"
+  },
+  "jump_convention": "DeltaK=K_P-K_C",
+  "mixed_tensor_residual": [
+    [
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "nonordinary_warning": "epsilon_P=-1 requires a different throat/back-to-back global gluing and is not admitted as the declared child-interior/parent-exterior branch.",
+  "ordinary_exterior_ruling": "For epsilon_P=+1 the parent angular term dominates for either epsilon_C, so sigma<0 and WEC/DEC fail.",
+  "orientation_branches": [
+    {
+      "DEC": "violated",
+      "NEC": "DeltaKtau>=DeltaKtheta",
+      "SEC": "DeltaKtau>=DeltaKtheta and DeltaKtau>=0",
+      "WEC": "violated",
+      "angular_jump": "-Rdot*X/(R*sqrt(X**2 + 1)) + sqrt(F + Rdot**2)/R",
+      "epsilon_C": 1,
+      "epsilon_P": 1,
+      "ordinary_parent_exterior": true,
+      "sigma_sign_from_exterior_bound": "negative"
+    },
+    {
+      "DEC": "violated",
+      "NEC": "DeltaKtau>=DeltaKtheta",
+      "SEC": "DeltaKtau>=DeltaKtheta and DeltaKtau>=0",
+      "WEC": "violated",
+      "angular_jump": "Rdot*X/(R*sqrt(X**2 + 1)) + sqrt(F + Rdot**2)/R",
+      "epsilon_C": -1,
+      "epsilon_P": 1,
+      "ordinary_parent_exterior": true,
+      "sigma_sign_from_exterior_bound": "negative"
+    },
+    {
+      "DEC": "conditional; different global gluing",
+      "NEC": "DeltaKtau>=DeltaKtheta",
+      "SEC": "DeltaKtau>=DeltaKtheta and DeltaKtau>=0",
+      "WEC": "conditional; different global gluing",
+      "angular_jump": "-Rdot*X/(R*sqrt(X**2 + 1)) - sqrt(F + Rdot**2)/R",
+      "epsilon_C": 1,
+      "epsilon_P": -1,
+      "ordinary_parent_exterior": false,
+      "sigma_sign_from_exterior_bound": "positive"
+    },
+    {
+      "DEC": "conditional; different global gluing",
+      "NEC": "DeltaKtau>=DeltaKtheta",
+      "SEC": "DeltaKtau>=DeltaKtheta and DeltaKtau>=0",
+      "WEC": "conditional; different global gluing",
+      "angular_jump": "Rdot*X/(R*sqrt(X**2 + 1)) - sqrt(F + Rdot**2)/R",
+      "epsilon_C": -1,
+      "epsilon_P": -1,
+      "ordinary_parent_exterior": false,
+      "sigma_sign_from_exterior_bound": "positive"
+    }
+  ],
+  "pressure": "c**4*(DeltaKtau + DeltaKtheta)/(8*pi*G)",
+  "sigma": "-DeltaKtheta*c**4/(4*pi*G)",
+  "surface_tensor": "Sigma^a_b=diag(-sigma,p_s,p_s)",
+  "tensor_residual_zero": true
+}

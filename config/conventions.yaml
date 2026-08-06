@@ -1,0 +1,10 @@
+signature: "-+++"
+units_for_symbolic_junction: "G=c=1; physical prefactors restored in reported formulas"
+jump: "[X]=X_P-X_C"
+extrinsic_curvature: "K_ab=e_a^mu e_b^nu nabla_mu n_nu=-n_mu(d_a d_b X^mu+Gamma^mu_nu_lambda d_a X^nu d_b X^lambda)"
+surface_tensor: "Sigma^a_b=diag(-sigma,p_s,p_s)"
+israel: "[K_ab]-h_ab[K]=-(8 pi G/c^4) Sigma_ab"
+ordinary_exterior_parent_normal: "+R"
+proper_time_parameter: "tau"
+child_proper_time_gauge: "N=1 after deriving the normalization constraint"
+

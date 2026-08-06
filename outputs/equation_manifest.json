@@ -1,0 +1,132 @@
+{
+  "active_convention": "config/conventions.yaml",
+  "equations": {
+    "P1": "dot(s)+Theta s=1/B^2",
+    "P2_child_C1": "Ktau_C=epsilon_C(Xdot/gamma+H_A X); Ktheta_C=epsilon_C X H_B",
+    "P2_conservation": "D_a Sigma^a_tau+[T_mn n^m e^n_tau]^P_C=0",
+    "P2_israel": "sigma=-c^4 DeltaKtheta/(4 pi G); p_s=c^4(DeltaKtau+DeltaKtheta)/(8 pi G)",
+    "P2_parent": "Ktau_P=epsilon_P(Rddot+m/R^2)/beta; Ktheta_P=epsilon_P beta/R",
+    "P3": "<s>=0 plus A_B implies <Q>=0 and no independent B0 torsion junction term",
+    "P4": "rho_eff=0 is necessary for impulse-free S1 matching to vacuum",
+    "P5": "Theta turning and H_B turning are distinct",
+    "P6": "Tc/TPl=0.8133906806; rho_c/rho_Pl=15.3724519; x=2 maps M/l_Pl=0.0881189"
+  },
+  "missing_sources": [],
+  "retractions": [
+    "s proportional to V^-1 as a complete solution",
+    "TEST 002 V1 J0-C moving shell viability",
+    "TEST 006 cubic root as an exact event prediction"
+  ],
+  "source_count": 18,
+  "sources": [
+    {
+      "epistemic_status": "historical specification",
+      "locator": "equation manifest and gates",
+      "path": "Arbiter/tests/TEST_001_PARENT_CHILD_PHASE0_EQUATION_CLOSURE.md",
+      "sha256": "fe0c152ac39bf3a88aaaee083eab73b703ed9aa2263033b5f13a911ac4a11c19"
+    },
+    {
+      "epistemic_status": "accepted review",
+      "locator": "corrected shear and closure ruling",
+      "path": "Arbiter/reviews/REVIEW_TEST_001_V2_2026-07-25.md",
+      "sha256": "b7c3a227eaeb1931d3d0c4ff4284f1a4cb8ca64fb74d4be531a3d4e5190c549d"
+    },
+    {
+      "epistemic_status": "historical specification",
+      "locator": "C0/C1 junction specification",
+      "path": "Arbiter/tests/TEST_002_J0_KS_SCHWARZSCHILD_MATCHING.md",
+      "sha256": "eea7acd2db44f6a2bd186840575a791b68adf0672c43b201bbab33b5a6118e66"
+    },
+    {
+      "epistemic_status": "accepted scoped review",
+      "locator": "accepted angular theorem and missing closeout",
+      "path": "Arbiter/reviews/REVIEW_TEST_002_V2_2026-07-25.md",
+      "sha256": "f3ec41cd218b61bb364c8805326a3b1a3fc6170c3b65d57839ab37e8c7450df0"
+    },
+    {
+      "epistemic_status": "historical specification",
+      "locator": "B0/B1/B2 and S1 gates",
+      "path": "Arbiter/tests/TEST_003_J1_EINSTEIN_CARTAN_BOUNDARY_CLOSURE.md",
+      "sha256": "1858cc03e9b39e715625f2b6388fe1c99b87d082f29755af017f00c9f8248197"
+    },
+    {
+      "epistemic_status": "accepted conditional review",
+      "locator": "B0 and S1 ruling",
+      "path": "Arbiter/reviews/REVIEW_TEST_003_V2_2026-07-25.md",
+      "sha256": "939a8c554323e4673e821dccd616f996c2a9061ee9bab4e51a1b0eebd5d69e27"
+    },
+    {
+      "epistemic_status": "historical specification",
+      "locator": "S1 data test",
+      "path": "Arbiter/tests/TEST_004_S1_INITIAL_DATA_COMPATIBILITY.md",
+      "sha256": "e1c99280f124f547655cfc026dd08ae78390280ced26df7336e1baac0d9c64e5"
+    },
+    {
+      "epistemic_status": "accepted conditional review",
+      "locator": "local S1 compatibility",
+      "path": "Arbiter/reviews/REVIEW_TEST_004_2026-07-25.md",
+      "sha256": "4502b82f8f7f494fa3a75e3db695b9b14a1b4396ccb48f481c5713ccde959a0d"
+    },
+    {
+      "epistemic_status": "historical specification",
+      "locator": "local acceleration test",
+      "path": "Arbiter/tests/TEST_005_S1_SHORT_TIME_EVOLUTION.md",
+      "sha256": "781b54de7f109d98ead4db4b64ed6a5239746b6399036337ca4df74a015ce748"
+    },
+    {
+      "epistemic_status": "accepted review",
+      "locator": "volume-turning tendency",
+      "path": "Arbiter/reviews/REVIEW_TEST_005_2026-07-25.md",
+      "sha256": "12bffbcdbe53154f6268e69dffec26d457c7862038d286c4f9e2961b7c4ecfca"
+    },
+    {
+      "epistemic_status": "historical specification",
+      "locator": "series and robustness test",
+      "path": "Arbiter/tests/TEST_006_S1_SHORT_TIME_REGULARITY_ROBUSTNESS.md",
+      "sha256": "4bfe124a0f473f914260d8456b88453015d1299645bdafa4be0184cb4c5ec8d5"
+    },
+    {
+      "epistemic_status": "accepted review",
+      "locator": "R4 analytic indeterminacy",
+      "path": "Arbiter/reviews/REVIEW_TEST_006_2026-07-25.md",
+      "sha256": "acbce7b240785dc22b17b2b31ca959d32e1ebe89ab91e0fe3a9feeb6cbaf9d8f"
+    },
+    {
+      "epistemic_status": "historical specification",
+      "locator": "event test",
+      "path": "Arbiter/tests/TEST_007_BOUNDED_S1_EVENT_CONTINUATION.md",
+      "sha256": "9ef9625bb33c32d67ec333eb44bd3c4eef2627e5dce80a56b850e49faa2ba6e2"
+    },
+    {
+      "epistemic_status": "accepted review",
+      "locator": "N2 volume/areal result",
+      "path": "Arbiter/reviews/REVIEW_TEST_007_2026-07-25.md",
+      "sha256": "4c22af211079148f332f30129989da18bc1cbb9bd1cd4728691be368ffb3016c"
+    },
+    {
+      "epistemic_status": "historical specification",
+      "locator": "physical calibration test",
+      "path": "Arbiter/tests/TEST_008_S1_PHYSICAL_CALIBRATION_VALIDITY.md",
+      "sha256": "3926d7c814f557a951a25f52a63e821fb313f1b42bdbc46d749cedc0cb0df02a"
+    },
+    {
+      "epistemic_status": "accepted scoped review",
+      "locator": "P3 thermal ruling",
+      "path": "Arbiter/reviews/REVIEW_TEST_008_2026-07-25.md",
+      "sha256": "1614a663e45d621b431acf788b3830f434cc015821c4b24142cad35915f118a0"
+    },
+    {
+      "epistemic_status": "read-only reproduced data",
+      "locator": "complete TEST 007 numerical output",
+      "path": "parent-child-s1-numerical/outputs/continuation.json",
+      "sha256": "75c44bb2c0294e900bbcd4369a73ab026132fb939e0924718ceee9a6cbac6bd8"
+    },
+    {
+      "epistemic_status": "read-only reproduced data",
+      "locator": "TEST 008 exact calibration",
+      "path": "parent-child-s1-calibration/symbolic/generated/thermal_calibration.json",
+      "sha256": "a160cab09d69f28b93f3ae8a0ac0023ba12c9de81f19078e22d2369e13c1dbcb"
+    }
+  ],
+  "test": "TEST_022"
+}

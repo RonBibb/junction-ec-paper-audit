@@ -1,0 +1,33 @@
+{
+  "comparison": {
+    "M_over_lPlanck": 0.0,
+    "Tc_over_TPlanck": 0.0,
+    "rho_c_over_rhoPlanck": 0.0,
+    "x_coefficient": 0.0
+  },
+  "exact": {
+    "M_over_lPlanck_for_x2": "820125*sqrt(2135)*zeta(3)**2/(364658*pi**(13/2))",
+    "Tc_over_TPlanck": "sqrt(12810)*pi**(5/2)/(2025*zeta(3))",
+    "rho_c_over_rhoPlanck": "77854483*pi**12/(2242016718750*zeta(3)**4)",
+    "x_coefficient": "622835864*pi**13/(3363025078125*zeta(3)**4)"
+  },
+  "exact_reproduction": true,
+  "identities": [
+    "natural units: hbar=c=k_B=1",
+    "unreduced l_Pl=sqrt(G), T_Pl=1/sqrt(G), rho_Pl=G^-2",
+    "kappa=8 pi G",
+    "alpha=kappa/32=pi G/4",
+    "rho=(pi^2/30)g_* T^4",
+    "n_f=[3 zeta(3)/(4 pi^2)]g_f T^3",
+    "critical rho=alpha n_f^2"
+  ],
+  "numeric": {
+    "M_over_lPlanck": 0.08811891192485782,
+    "Tc_over_TPlanck": 0.8133906806414589,
+    "rho_c_over_rhoPlanck": 15.372451912542129,
+    "x_coefficient": 257.56790397922515
+  },
+  "physical_ruling": "P3: standard thermal SM-like sharp Weyssenhoff realization is outside the declared conservative controlled regime.",
+  "scope": "Does not exclude nonthermal, different-spin, finite-thickness, large-species, or quantum-completed successors.",
+  "source": "parent-child-s1-calibration/symbolic/generated/thermal_calibration.json"
+}

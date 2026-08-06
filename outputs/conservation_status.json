@@ -1,0 +1,18 @@
+{
+  "C0_limit": "X=0 gives zero child flux and the prior C0 conservation identity",
+  "Q_tau": "0",
+  "Q_tau_zero": true,
+  "bulk_flux_child": "epsilon_C gamma X (rho+p)",
+  "bulk_flux_parent": "0",
+  "child_codazzi_raw": "X*epsilon_C*sqrt(X**2 + 1)*(-H_A*H_B + H_B**2 + dH_B)",
+  "child_codazzi_target_residual": "0",
+  "child_field_equation": "dH_B-H_A H_B+H_B^2=-(kappa/2)(rho+p)",
+  "covector_divergence": "D_a Sigma^a_tau=-E_dot",
+  "energy_change_expected": "-epsilon_C gamma X (rho+p)",
+  "energy_change_reduced": "-X*epsilon_C*sqrt(X**2 + 1)*(p + rho)",
+  "interpretation": "C1 exchanges energy with the comoving child fluid when X is nonzero; this is shell crossing, not parent-child mass transfer.",
+  "jump_flux_P_minus_C": "-X*epsilon_C*sqrt(X**2 + 1)*(p + rho)",
+  "parent_codazzi_residual": "0",
+  "surface_divergence_reduced": "X*epsilon_C*sqrt(X**2 + 1)*(p + rho)",
+  "surface_energy_equation": "E_dot=dot(sigma)+2 Rdot/R(sigma+p_s)"
+}

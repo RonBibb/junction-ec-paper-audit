@@ -1,0 +1,46 @@
+[
+  {
+    "DEC": "violated",
+    "NEC": "DeltaKtau>=DeltaKtheta",
+    "SEC": "DeltaKtau>=DeltaKtheta and DeltaKtau>=0",
+    "WEC": "violated",
+    "angular_jump": "-Rdot*X/(R*sqrt(X**2 + 1)) + sqrt(F + Rdot**2)/R",
+    "epsilon_C": 1,
+    "epsilon_P": 1,
+    "ordinary_parent_exterior": true,
+    "sigma_sign_from_exterior_bound": "negative"
+  },
+  {
+    "DEC": "violated",
+    "NEC": "DeltaKtau>=DeltaKtheta",
+    "SEC": "DeltaKtau>=DeltaKtheta and DeltaKtau>=0",
+    "WEC": "violated",
+    "angular_jump": "Rdot*X/(R*sqrt(X**2 + 1)) + sqrt(F + Rdot**2)/R",
+    "epsilon_C": -1,
+    "epsilon_P": 1,
+    "ordinary_parent_exterior": true,
+    "sigma_sign_from_exterior_bound": "negative"
+  },
+  {
+    "DEC": "conditional; different global gluing",
+    "NEC": "DeltaKtau>=DeltaKtheta",
+    "SEC": "DeltaKtau>=DeltaKtheta and DeltaKtau>=0",
+    "WEC": "conditional; different global gluing",
+    "angular_jump": "-Rdot*X/(R*sqrt(X**2 + 1)) - sqrt(F + Rdot**2)/R",
+    "epsilon_C": 1,
+    "epsilon_P": -1,
+    "ordinary_parent_exterior": false,
+    "sigma_sign_from_exterior_bound": "positive"
+  },
+  {
+    "DEC": "conditional; different global gluing",
+    "NEC": "DeltaKtau>=DeltaKtheta",
+    "SEC": "DeltaKtau>=DeltaKtheta and DeltaKtau>=0",
+    "WEC": "conditional; different global gluing",
+    "angular_jump": "Rdot*X/(R*sqrt(X**2 + 1)) - sqrt(F + Rdot**2)/R",
+    "epsilon_C": -1,
+    "epsilon_P": -1,
+    "ordinary_parent_exterior": false,
+    "sigma_sign_from_exterior_bound": "positive"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "event_equal": true,
+  "event_time_abs": 0.0,
+  "endpoint_B_abs": 0.0,
+  "endpoint_Theta_abs": 8.881784197001252e-16,
+  "grid_counts_equal": [
+    true,
+    true
+  ]
+}
