@@ -4,6 +4,7 @@
     "P1": "dot(s)+Theta s=1/B^2",
     "P2_child_C1": "Ktau_C=epsilon_C(Xdot/gamma+H_A X); Ktheta_C=epsilon_C X H_B",
     "P2_conservation": "D_a Sigma^a_tau+[T_mn n^m e^n_tau]^P_C=0",
+    "P2_interior": "For F=-f<0 and aligned angular curvatures, sigma>0 iff f<Rdot^2<(1+X^2)f",
     "P2_israel": "sigma=-c^4 DeltaKtheta/(4 pi G); p_s=c^4(DeltaKtau+DeltaKtheta)/(8 pi G)",
     "P2_parent": "Ktau_P=epsilon_P(Rddot+m/R^2)/beta; Ktheta_P=epsilon_P beta/R",
     "P3": "<s>=0 plus A_B implies <Q>=0 and no independent B0 torsion junction term",

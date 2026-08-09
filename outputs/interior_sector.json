@@ -1,0 +1,41 @@
+{
+  "aligned_condition_residual": "-Rdot**2 + X**2*f + f",
+  "both_density_signs_verified": true,
+  "interval_derivation_verified": true,
+  "positive_density_interval": "f<Rdot^2<(1+X^2)f with epsilon_C X Rdot>0",
+  "sector": "F<0 future-infalling timelike shell",
+  "witness": {
+    "Bdot": "-sqrt(10)/5",
+    "EF_future": true,
+    "EF_normal_r": "sqrt(14)/2",
+    "EF_normal_target_residual": "0",
+    "EF_proper_time_residual": "0",
+    "EF_vdot": "4 - sqrt(14)",
+    "F": "-1/2",
+    "R": "1",
+    "Rdot": "-2",
+    "epsilon_C": -1,
+    "epsilon_P": 1,
+    "gamma": "sqrt(10)",
+    "gradient_norm_child": "-2/5",
+    "gradient_norm_parent": "-1/2",
+    "m": "3/4",
+    "paired_signs": [
+      {
+        "DeltaKtheta_times_R": "-3*sqrt(10)/5 + sqrt(14)/2",
+        "Ktheta_child_times_R": "3*sqrt(10)/5",
+        "Ktheta_parent_times_R": "sqrt(14)/2",
+        "X": "3",
+        "sigma_sign": "positive"
+      },
+      {
+        "DeltaKtheta_times_R": "sqrt(14)/2 + 3*sqrt(10)/5",
+        "Ktheta_child_times_R": "-3*sqrt(10)/5",
+        "Ktheta_parent_times_R": "sqrt(14)/2",
+        "X": "-3",
+        "sigma_sign": "negative"
+      }
+    ],
+    "same_bulk_invariants": true
+  }
+}

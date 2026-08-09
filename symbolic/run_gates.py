@@ -15,6 +15,7 @@ def main():
     israel = read_json(OUT / "energy_conditions.json")
     conservation = read_json(OUT / "conservation_status.json")
     chart = read_json(OUT / "chart_comparison.json")
+    interior = read_json(OUT / "interior_sector.json")
     cartan = read_json(OUT / "cartan_b0.json")
     s1 = read_json(OUT / "s1_status.json")
     events = read_json(OUT / "event_status.json")
@@ -41,6 +42,11 @@ def main():
         conservation["Q_tau_zero"]
         and chart["Ktau_chart_agreement"]
         and chart["Ktheta_chart_agreement"]
+        and interior["interval_derivation_verified"]
+        and interior["both_density_signs_verified"]
+        and interior["witness"]["EF_future"]
+        and interior["witness"]["EF_proper_time_residual"] == "0"
+        and interior["witness"]["EF_normal_target_residual"] == "0"
         and len(ordinary) == 2
         and israel["convention_reversal_verified"]
         and all(row["WEC"] == "violated" and row["DEC"] == "violated" for row in ordinary)
@@ -76,18 +82,18 @@ def main():
         "permitted_wording",
         "prohibited_wording",
     }
-    jec8 = len(claims) == 7 and all(required_claim_fields <= set(row) for row in claims)
+    jec8 = len(claims) == 8 and all(required_claim_fields <= set(row) for row in claims)
 
     gates = [
         gate("JEC0", jec0, "18 hashed read-only sources and one convention map"),
         gate("JEC1", jec1, "shear equation and integrated identity close exactly"),
         gate("JEC2", jec2, "full parent/C1 extrinsic curvature closes by two methods and Israel residual is zero"),
-        gate("JEC3", jec3, "C1 conservation, orientation, turning, and complete EF chart checks pass"),
+        gate("JEC3", jec3, "C1 conservation, orientation, turning, exterior EF, and paired interior-sector sign checks pass"),
         gate("JEC4", jec4, "B0 Cartan reduction and torsion-free/Israel limit pass within declared scope"),
         gate("JEC5", jec5, "S1 local Darmois, constraint, and data ledger reproduced"),
         gate("JEC6", jec6, "N2 baseline, tight repeat, and both perturbation grids reproduced"),
         gate("JEC7", jec7, "TEST 008 exact unit and numerical calibration reproduced"),
-        gate("JEC8", jec8, "seven load-bearing claim rows contain scope, controls, limitations, and wording bounds"),
+        gate("JEC8", jec8, "eight load-bearing claim rows contain scope, controls, limitations, and wording bounds"),
     ]
     all_pass = all(item["status"] == "pass" for item in gates)
     outcome = "JEC-A" if all_pass else "JEC-D"

@@ -4,6 +4,9 @@ test_child_components (test_c1_two_methods.C1TwoMethodsTest.test_child_component
 test_parent_components (test_c1_two_methods.C1TwoMethodsTest.test_parent_components) ... ok
 test_n2_and_original_outputs (test_event_reproduction.EventReproductionTest.test_n2_and_original_outputs) ... ok
 test_numerical_controls (test_event_reproduction.EventReproductionTest.test_numerical_controls) ... ok
+test_exact_positive_density_interval (test_interior_sector.InteriorSectorTest.test_exact_positive_density_interval) ... ok
+test_regular_future_infalling_witness (test_interior_sector.InteriorSectorTest.test_regular_future_infalling_witness) ... ok
+test_same_bulk_pair_realizes_both_density_signs (test_interior_sector.InteriorSectorTest.test_same_bulk_pair_realizes_both_density_signs) ... ok
 test_energy_condition_scope (test_israel_tensor.IsraelTensorTest.test_energy_condition_scope) ... ok
 test_full_mixed_residual (test_israel_tensor.IsraelTensorTest.test_full_mixed_residual) ... ok
 test_full_nec_combination_matches_curvature_jump (test_nec_criterion.NecCriterionTest.test_full_nec_combination_matches_curvature_jump) ... ok
@@ -31,6 +34,6 @@ test_horizon_is_not_turning_point (test_turning_point.TurningPointTest.test_hori
 test_unsolved_exterior_limit (test_turning_point.TurningPointTest.test_unsolved_exterior_limit) ... ok
 
 ----------------------------------------------------------------------
-Ran 31 tests in 0.502s
+Ran 34 tests in 0.422s
 
 OK

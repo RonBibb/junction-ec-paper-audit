@@ -17,7 +17,7 @@
     },
     {
       "gate": "JEC3",
-      "result": "C1 conservation, orientation, turning, and complete EF chart checks pass",
+      "result": "C1 conservation, orientation, turning, exterior EF, and paired interior-sector sign checks pass",
       "status": "pass"
     },
     {
@@ -42,7 +42,7 @@
     },
     {
       "gate": "JEC8",
-      "result": "seven load-bearing claim rows contain scope, controls, limitations, and wording bounds",
+      "result": "eight load-bearing claim rows contain scope, controls, limitations, and wording bounds",
       "status": "pass"
     }
   ],

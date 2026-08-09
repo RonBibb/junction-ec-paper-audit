@@ -62,6 +62,23 @@ Therefore the ordinary exterior branch retains \(\sigma<0\) for either child-sid
 orientation. WEC and DEC fail. The full temporal sector does not remove the accepted angular
 obstruction; it completes the pressure and conservation ledger.
 
+## Interior sign classification
+
+For \(F=-f<0\), a timelike shell requires \(\dot R^2>f\). When the KS and
+Schwarzschild angular curvatures are positively aligned, the surface density is positive
+exactly on
+
+\[
+f<\dot R^2<(1+X^2)f.
+\]
+
+The exact paired witness at \(R=1\), \(F=-1/2\), \(\dot R=-2\),
+\(\epsilon_P=+1\), and \(\epsilon_C=-1\) gives \(\sigma>0\) for \(X=3\) and
+\(\sigma<0\) for \(X=-3\), while preserving the same local bulk gradient norms and
+retained-side gluing. Ingoing Eddington–Finkelstein normalization, future orientation, and
+the increasing-\(R\) normal all close exactly. This is a local timelike sign classification,
+not a dynamical or global transition result.
+
 ## Reproduced independent controls
 
 - curvature-sourced shear and its integrated identity;
@@ -83,4 +100,3 @@ The six-result paper architecture closes with the following scope:
 
 The next work is novelty review, an independent manuscript-level equation audit, and scoped
 drafting—not another transition or bounce simulation.
-

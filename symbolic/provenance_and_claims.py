@@ -47,6 +47,7 @@ def manifest():
         "P2_parent": "Ktau_P=epsilon_P(Rddot+m/R^2)/beta; Ktheta_P=epsilon_P beta/R",
         "P2_child_C1": "Ktau_C=epsilon_C(Xdot/gamma+H_A X); Ktheta_C=epsilon_C X H_B",
         "P2_israel": "sigma=-c^4 DeltaKtheta/(4 pi G); p_s=c^4(DeltaKtau+DeltaKtheta)/(8 pi G)",
+        "P2_interior": "For F=-f<0 and aligned angular curvatures, sigma>0 iff f<Rdot^2<(1+X^2)f",
         "P2_conservation": "D_a Sigma^a_tau+[T_mn n^m e^n_tau]^P_C=0",
         "P3": "<s>=0 plus A_B implies <Q>=0 and no independent B0 torsion junction term",
         "P4": "rho_eff=0 is necessary for impulse-free S1 matching to vacuum",
@@ -97,6 +98,18 @@ def claims():
         {
             "id": "R3",
             "type": "theorem/abstract",
+            "claim": "For F<0 the KS/Schwarzschild surface-density sign is indefinite; an exact aligned interval permits positive density and a same-bulk paired witness realizes both signs.",
+            "artifact": "symbolic/interior_sector.py; outputs/interior_sector.json; tests/test_interior_sector.py",
+            "assumptions_domain": "local future-infalling timelike segment, Schwarzschild F<0, retained increasing-R parent side, fixed KS retained interval",
+            "epistemic_status": "exact local sign classification if JEC3 passes",
+            "independent_control": "invariant inequality, exact paired witness, and ingoing-EF normalization and normal checks",
+            "strongest_limitation": "not a shell equation of motion, stability result, global completion, or spacelike-transition result",
+            "permitted_wording": "interior timelike sign indeterminacy with explicit positive-density witness",
+            "prohibited_wording": "positive-energy child universe or validation of interior transition models",
+        },
+        {
+            "id": "R4",
+            "type": "theorem/abstract",
             "claim": "Unpolarized algebraic torsion supplies no independent B0 angular repair under the declared boundary assumptions.",
             "artifact": "symbolic/cartan_b0.py; outputs/cartan_b0.json",
             "assumptions_domain": "Weyssenhoff/Frenkel, zero mean boundary spin, A_B, no surface-spin action or distributional contorsion",
@@ -107,7 +120,7 @@ def claims():
             "prohibited_wording": "Einstein-Cartan torsion cannot repair any junction",
         },
         {
-            "id": "R4",
+            "id": "R5",
             "type": "conclusion",
             "claim": "A nonempty S1 family satisfies the necessary local impulse-free data and admits bounded local evolution.",
             "artifact": "symbolic/s1_constraints.py; outputs/s1_status.json",
@@ -119,7 +132,7 @@ def claims():
             "prohibited_wording": "global child spacetime or mass transfer",
         },
         {
-            "id": "R5",
+            "id": "R6",
             "type": "figure/conclusion",
             "claim": "The N2 baseline expands in total volume while its areal radius remains contracting through t=M.",
             "artifact": "numerical/event_reproduction.py; outputs/event_status.json",
@@ -131,7 +144,7 @@ def claims():
             "prohibited_wording": "bounce, nonsingularity, or long-time behavior",
         },
         {
-            "id": "R6",
+            "id": "R7",
             "type": "conclusion",
             "claim": "The standard thermal SM-like sharp Weyssenhoff calibration fails the conservative TEST 008 control regime.",
             "artifact": "numerical/calibration_reproduction.py; outputs/calibration_status.json",
@@ -145,9 +158,9 @@ def claims():
         {
             "id": "ABSTRACT",
             "type": "abstract",
-            "claim": "Six scoped control results form a coherent junction-and-controls paper if JEC0-JEC8 pass.",
+            "claim": "Seven scoped control results form a coherent junction-and-controls record if JEC0-JEC8 pass.",
             "artifact": "all TEST 022 outputs and results/ARBITER_PACKET.md",
-            "assumptions_domain": "union of explicitly printed R1-R6 domains",
+            "assumptions_domain": "union of explicitly printed R1-R7 domains",
             "epistemic_status": "paper eligibility only; not empirical validation",
             "independent_control": "claim matrix and gate runner",
             "strongest_limitation": "no child-universe transition, bounce, transfer, time reversal, or empirical result",
@@ -167,4 +180,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
