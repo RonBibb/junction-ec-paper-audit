@@ -2,11 +2,11 @@
 set -eu
 
 ROOT=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
-PY="$ROOT/.venv/bin/python"
+PY="${JUNCTION_AUDIT_PYTHON:-$ROOT/.venv/bin/python}"
 cd "$ROOT"
 
 if [ ! -x "$PY" ]; then
-  echo "Missing project-local .venv. Run the recorded environment bootstrap first." >&2
+  echo "Python environment not found. Bootstrap .venv or set JUNCTION_AUDIT_PYTHON." >&2
   exit 2
 fi
 

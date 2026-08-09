@@ -9,6 +9,13 @@ Run:
 ./verify.sh
 ```
 
+By default the entry point uses `.venv/bin/python`. A parent paper repository may instead provide
+an existing compatible interpreter explicitly:
+
+```sh
+JUNCTION_AUDIT_PYTHON=/path/to/python ./verify.sh
+```
+
 The package treats `parent-child-phase0/`, `parent-child-j0/`, `parent-child-j1/`, and the
 five `parent-child-s1*` packages as read-only provenance inputs. It does not alter their
 outputs.
