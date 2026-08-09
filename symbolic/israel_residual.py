@@ -47,7 +47,7 @@ def derive():
                 "WEC": "violated" if ordinary else "conditional; different global gluing",
                 "DEC": "violated" if ordinary else "conditional; different global gluing",
                 "NEC": "DeltaKtau>=DeltaKtheta",
-                "SEC": "DeltaKtau>=DeltaKtheta and DeltaKtau>=0",
+                "SEC": "DeltaKtau>=DeltaKtheta and DeltaKtau+DeltaKtheta>=0",
             }
         )
 
@@ -73,7 +73,7 @@ def derive():
             "NEC": "sigma+p_s>=0",
             "WEC": "sigma>=0 and NEC",
             "DEC": "sigma>=|p_s|",
-            "SEC_2plus1": "NEC and sigma+2p_s>=0",
+            "SEC_2plus1": "NEC and p_s>=0",
         },
         "orientation_branches": branches,
         "ordinary_exterior_ruling": "For epsilon_P=+1 the parent angular term dominates for either explicitly retained KS interval, so sigma<0 and WEC/DEC fail.",

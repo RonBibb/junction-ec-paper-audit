@@ -13,6 +13,7 @@ test_static_comoving_threshold (test_nec_criterion.NecCriterionTest.test_static_
 test_static_isotropic_bulk_witness (test_nec_criterion.NecCriterionTest.test_static_isotropic_bulk_witness) ... ok
 test_convention_and_topology_not_confused (test_orientation_invariance.OrientationInvarianceTest.test_convention_and_topology_not_confused) ... ok
 test_explicit_branch_table (test_orientation_invariance.OrientationInvarianceTest.test_explicit_branch_table) ... ok
+test_intrinsic_three_dimensional_sec (test_orientation_invariance.OrientationInvarianceTest.test_intrinsic_three_dimensional_sec) ... ok
 test_one_common_normal_and_retained_side_map (test_orientation_invariance.OrientationInvarianceTest.test_one_common_normal_and_retained_side_map) ... ok
 test_exact_calibration_reproduction (test_physical_units.PhysicalUnitsTest.test_exact_calibration_reproduction) ... ok
 test_scope (test_physical_units.PhysicalUnitsTest.test_scope) ... ok
@@ -30,6 +31,6 @@ test_horizon_is_not_turning_point (test_turning_point.TurningPointTest.test_hori
 test_unsolved_exterior_limit (test_turning_point.TurningPointTest.test_unsolved_exterior_limit) ... ok
 
 ----------------------------------------------------------------------
-Ran 30 tests in 0.494s
+Ran 31 tests in 0.502s
 
 OK

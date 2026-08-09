@@ -28,6 +28,12 @@ class OrientationInvarianceTest(unittest.TestCase):
         self.assertEqual(data["child_retained_side_map"]["chi<=chi_Sigma"], 1)
         self.assertEqual(data["child_retained_side_map"]["chi>=chi_Sigma"], -1)
 
+    def test_intrinsic_three_dimensional_sec(self):
+        data = load("energy_conditions.json")
+        self.assertEqual(data["energy_condition_identities"]["SEC_2plus1"], "NEC and p_s>=0")
+        for branch in data["orientation_branches"]:
+            self.assertIn("DeltaKtau+DeltaKtheta>=0", branch["SEC"])
+
 
 if __name__ == "__main__":
     unittest.main()

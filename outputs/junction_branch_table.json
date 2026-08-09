@@ -2,7 +2,7 @@
   {
     "DEC": "violated",
     "NEC": "DeltaKtau>=DeltaKtheta",
-    "SEC": "DeltaKtau>=DeltaKtheta and DeltaKtau>=0",
+    "SEC": "DeltaKtau>=DeltaKtheta and DeltaKtau+DeltaKtheta>=0",
     "WEC": "violated",
     "angular_jump": "-Rdot*X/(R*sqrt(X**2 + 1)) + sqrt(F + Rdot**2)/R",
     "epsilon_C": 1,
@@ -13,7 +13,7 @@
   {
     "DEC": "violated",
     "NEC": "DeltaKtau>=DeltaKtheta",
-    "SEC": "DeltaKtau>=DeltaKtheta and DeltaKtau>=0",
+    "SEC": "DeltaKtau>=DeltaKtheta and DeltaKtau+DeltaKtheta>=0",
     "WEC": "violated",
     "angular_jump": "Rdot*X/(R*sqrt(X**2 + 1)) + sqrt(F + Rdot**2)/R",
     "epsilon_C": -1,
@@ -24,7 +24,7 @@
   {
     "DEC": "conditional; different global gluing",
     "NEC": "DeltaKtau>=DeltaKtheta",
-    "SEC": "DeltaKtau>=DeltaKtheta and DeltaKtau>=0",
+    "SEC": "DeltaKtau>=DeltaKtheta and DeltaKtau+DeltaKtheta>=0",
     "WEC": "conditional; different global gluing",
     "angular_jump": "-Rdot*X/(R*sqrt(X**2 + 1)) - sqrt(F + Rdot**2)/R",
     "epsilon_C": 1,
@@ -35,7 +35,7 @@
   {
     "DEC": "conditional; different global gluing",
     "NEC": "DeltaKtau>=DeltaKtheta",
-    "SEC": "DeltaKtau>=DeltaKtheta and DeltaKtau>=0",
+    "SEC": "DeltaKtau>=DeltaKtheta and DeltaKtau+DeltaKtheta>=0",
     "WEC": "conditional; different global gluing",
     "angular_jump": "Rdot*X/(R*sqrt(X**2 + 1)) - sqrt(F + Rdot**2)/R",
     "epsilon_C": -1,
