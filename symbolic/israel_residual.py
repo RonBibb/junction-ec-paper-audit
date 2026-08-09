@@ -52,6 +52,15 @@ def derive():
         )
 
     return {
+        "common_normal": "n=deta points from retained KS region (eta<0) to retained Schwarzschild region (eta>0)",
+        "one_sided_limits": "n_C and n_P are limits of one normal, not independently outward normals",
+        "child_retained_side_map": {
+            "chi<=chi_Sigma": 1,
+            "chi>=chi_Sigma": -1,
+        },
+        "parent_retained_side_map": {
+            "ordinary exterior containing spatial infinity": 1,
+        },
         "jump_convention": "DeltaK=K_P-K_C",
         "surface_tensor": "Sigma^a_b=diag(-sigma,p_s,p_s)",
         "sigma": str(sigma),
@@ -67,8 +76,8 @@ def derive():
             "SEC_2plus1": "NEC and sigma+2p_s>=0",
         },
         "orientation_branches": branches,
-        "ordinary_exterior_ruling": "For epsilon_P=+1 the parent angular term dominates for either epsilon_C, so sigma<0 and WEC/DEC fail.",
-        "convention_reversal": "Simultaneously reverse both normals and exchange jump order; DeltaK and physical Sigma are unchanged.",
+        "ordinary_exterior_ruling": "For epsilon_P=+1 the parent angular term dominates for either explicitly retained KS interval, so sigma<0 and WEC/DEC fail.",
+        "convention_reversal": "Reverse the single common normal and exchange jump order; DeltaK and physical Sigma are unchanged.",
         "convention_reversal_verified": reversal_verified,
         "nonordinary_warning": "epsilon_P=-1 requires a different throat/back-to-back global gluing and is not admitted as the declared child-interior/parent-exterior branch.",
     }

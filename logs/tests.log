@@ -13,6 +13,7 @@ test_static_comoving_threshold (test_nec_criterion.NecCriterionTest.test_static_
 test_static_isotropic_bulk_witness (test_nec_criterion.NecCriterionTest.test_static_isotropic_bulk_witness) ... ok
 test_convention_and_topology_not_confused (test_orientation_invariance.OrientationInvarianceTest.test_convention_and_topology_not_confused) ... ok
 test_explicit_branch_table (test_orientation_invariance.OrientationInvarianceTest.test_explicit_branch_table) ... ok
+test_one_common_normal_and_retained_side_map (test_orientation_invariance.OrientationInvarianceTest.test_one_common_normal_and_retained_side_map) ... ok
 test_exact_calibration_reproduction (test_physical_units.PhysicalUnitsTest.test_exact_calibration_reproduction) ... ok
 test_scope (test_physical_units.PhysicalUnitsTest.test_scope) ... ok
 test_complete_parent_tensor_agrees (test_regular_chart.RegularChartTest.test_complete_parent_tensor_agrees) ... ok
@@ -23,11 +24,12 @@ test_exact_subtraction_and_integral (test_shear_identity.ShearIdentityTest.test_
 test_all_independent_mixed_einstein_components (test_static_nariai_family.StaticNariaiFamilyTest.test_all_independent_mixed_einstein_components) ... ok
 test_comoving_induced_metric_curvature_and_flux (test_static_nariai_family.StaticNariaiFamilyTest.test_comoving_induced_metric_curvature_and_flux) ... ok
 test_vacuum_energy_normalization_and_isotropy (test_static_nariai_family.StaticNariaiFamilyTest.test_vacuum_energy_normalization_and_isotropy) ... ok
+test_anisotropic_longitudinal_flux (test_surface_conservation.SurfaceConservationTest.test_anisotropic_longitudinal_flux) ... ok
 test_c1_flux_closure (test_surface_conservation.SurfaceConservationTest.test_c1_flux_closure) ... ok
 test_horizon_is_not_turning_point (test_turning_point.TurningPointTest.test_horizon_is_not_turning_point) ... ok
 test_unsolved_exterior_limit (test_turning_point.TurningPointTest.test_unsolved_exterior_limit) ... ok
 
 ----------------------------------------------------------------------
-Ran 28 tests in 0.526s
+Ran 30 tests in 0.494s
 
 OK

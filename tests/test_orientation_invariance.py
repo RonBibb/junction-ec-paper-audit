@@ -19,6 +19,15 @@ class OrientationInvarianceTest(unittest.TestCase):
         self.assertTrue(data["convention_reversal_verified"])
         self.assertIn("different throat/back-to-back", data["nonordinary_warning"])
 
+    def test_one_common_normal_and_retained_side_map(self):
+        data = load("energy_conditions.json")
+        self.assertIn("eta<0", data["common_normal"])
+        self.assertIn("eta>0", data["common_normal"])
+        self.assertIn("not independently outward", data["one_sided_limits"])
+        self.assertEqual(data["parent_retained_side_map"]["ordinary exterior containing spatial infinity"], 1)
+        self.assertEqual(data["child_retained_side_map"]["chi<=chi_Sigma"], 1)
+        self.assertEqual(data["child_retained_side_map"]["chi>=chi_Sigma"], -1)
+
 
 if __name__ == "__main__":
     unittest.main()

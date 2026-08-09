@@ -1,5 +1,10 @@
 {
-  "convention_reversal": "Simultaneously reverse both normals and exchange jump order; DeltaK and physical Sigma are unchanged.",
+  "child_retained_side_map": {
+    "chi<=chi_Sigma": 1,
+    "chi>=chi_Sigma": -1
+  },
+  "common_normal": "n=deta points from retained KS region (eta<0) to retained Schwarzschild region (eta>0)",
+  "convention_reversal": "Reverse the single common normal and exchange jump order; DeltaK and physical Sigma are unchanged.",
   "convention_reversal_verified": true,
   "energy_condition_identities": {
     "DEC": "sigma>=|p_s|",
@@ -28,7 +33,8 @@
     ]
   ],
   "nonordinary_warning": "epsilon_P=-1 requires a different throat/back-to-back global gluing and is not admitted as the declared child-interior/parent-exterior branch.",
-  "ordinary_exterior_ruling": "For epsilon_P=+1 the parent angular term dominates for either epsilon_C, so sigma<0 and WEC/DEC fail.",
+  "one_sided_limits": "n_C and n_P are limits of one normal, not independently outward normals",
+  "ordinary_exterior_ruling": "For epsilon_P=+1 the parent angular term dominates for either explicitly retained KS interval, so sigma<0 and WEC/DEC fail.",
   "orientation_branches": [
     {
       "DEC": "violated",
@@ -75,6 +81,9 @@
       "sigma_sign_from_exterior_bound": "positive"
     }
   ],
+  "parent_retained_side_map": {
+    "ordinary exterior containing spatial infinity": 1
+  },
   "pressure": "c**4*(DeltaKtau + DeltaKtheta)/(8*pi*G)",
   "sigma": "-DeltaKtheta*c**4/(4*pi*G)",
   "surface_tensor": "Sigma^a_b=diag(-sigma,p_s,p_s)",

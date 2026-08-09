@@ -12,7 +12,13 @@ class SurfaceConservationTest(unittest.TestCase):
         self.assertTrue(data["Q_tau_zero"])
         self.assertIn("not parent-child mass transfer", data["interpretation"])
 
+    def test_anisotropic_longitudinal_flux(self):
+        data = load("conservation_status.json")
+        self.assertIn("p_chi", data["bulk_flux_child"])
+        self.assertNotIn("p_perp", data["bulk_flux_child"])
+        self.assertTrue(data["transverse_pressure_cancels"])
+        self.assertIn("p_chi", data["child_field_equation"])
+
 
 if __name__ == "__main__":
     unittest.main()
-
