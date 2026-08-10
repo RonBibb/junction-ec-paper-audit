@@ -2,6 +2,8 @@
 from __future__ import annotations
 
 from common import OUT, read_json, write_json
+from energy_condition_criteria import CRITERION_VERSION, DECLARATIONS, evaluate
+import sympy as sp
 
 
 def gate(name, passed, result):
@@ -86,6 +88,18 @@ def main():
         "prohibited_wording",
     }
     jec8 = len(claims) == 8 and all(required_claim_fields <= set(row) for row in claims)
+    witness = interior["ordinary_matter_witness"]
+    recomputed_conditions = evaluate(
+        sp.sympify(witness["sigma_scaled_by_c4_over_8piG"]),
+        sp.sympify(witness["pressure_scaled_by_c4_over_8piG"]),
+        strict=True,
+    )
+    jec9 = (
+        israel["energy_condition_criterion_version"] == CRITERION_VERSION
+        and witness["energy_condition_criterion_version"] == CRITERION_VERSION
+        and all(israel["energy_condition_identities"][key] == value for key, value in DECLARATIONS.items())
+        and all(witness[key] == value for key, value in recomputed_conditions.items())
+    )
 
     gates = [
         gate("JEC0", jec0, "18 hashed read-only sources and one convention map"),
@@ -97,12 +111,13 @@ def main():
         gate("JEC6", jec6, "N2 baseline, tight repeat, and both perturbation grids reproduced"),
         gate("JEC7", jec7, "TEST 008 exact unit and numerical calibration reproduced"),
         gate("JEC8", jec8, "eight load-bearing claim rows contain scope, controls, limitations, and wording bounds"),
+        gate("JEC9", jec9, "all shell energy-condition results are recomputed from one declared executable criterion set"),
     ]
     all_pass = all(item["status"] == "pass" for item in gates)
     outcome = "JEC-A" if all_pass else "JEC-D"
     result = {
         "test": "TEST_022_JUNCTION_EC_PAPER_DERIVATIONAL_CLOSURE",
-        "highest_completed_gate": "JEC8" if all_pass else next(item["gate"] for item in gates if item["status"] == "fail"),
+        "highest_completed_gate": "JEC9" if all_pass else next(item["gate"] for item in gates if item["status"] == "fail"),
         "outcome": outcome,
         "gates": gates,
         "paper_eligibility": "eligible for novelty review and scoped drafting" if all_pass else "not eligible under current six-result architecture",

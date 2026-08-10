@@ -44,9 +44,14 @@
       "gate": "JEC8",
       "result": "eight load-bearing claim rows contain scope, controls, limitations, and wording bounds",
       "status": "pass"
+    },
+    {
+      "gate": "JEC9",
+      "result": "all shell energy-condition results are recomputed from one declared executable criterion set",
+      "status": "pass"
     }
   ],
-  "highest_completed_gate": "JEC8",
+  "highest_completed_gate": "JEC9",
   "outcome": "JEC-A",
   "paper_eligibility": "eligible for novelty review and scoped drafting",
   "scope": "Paper closure only; not evidence for a child universe or physical transition.",

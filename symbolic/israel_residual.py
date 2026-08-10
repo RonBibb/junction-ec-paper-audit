@@ -5,6 +5,7 @@ import itertools
 import sympy as sp
 
 from common import write_json
+from energy_condition_criteria import CRITERION_VERSION, DECLARATIONS
 
 
 def derive():
@@ -70,11 +71,9 @@ def derive():
         "energy_condition_identities": {
             "sigma_plus_p": "c^4/(8 pi G)(DeltaKtau-DeltaKtheta)",
             "sigma_plus_2p": "c^4/(4 pi G) DeltaKtau",
-            "NEC": "sigma+p_s>=0",
-            "WEC": "sigma>=0 and NEC",
-            "DEC": "sigma>=|p_s|",
-            "SEC_2plus1": "NEC and p_s>=0",
+            **DECLARATIONS,
         },
+        "energy_condition_criterion_version": CRITERION_VERSION,
         "orientation_branches": branches,
         "ordinary_exterior_ruling": "For epsilon_P=+1 the parent angular term dominates for either explicitly retained KS interval, so sigma<0 and WEC/DEC fail.",
         "convention_reversal": "Reverse the single common normal and exchange jump order; DeltaK and physical Sigma are unchanged.",

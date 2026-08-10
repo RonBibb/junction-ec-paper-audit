@@ -6,6 +6,7 @@
   "common_normal": "n=deta points from retained KS region (eta<0) to retained Schwarzschild region (eta>0)",
   "convention_reversal": "Reverse the single common normal and exchange jump order; DeltaK and physical Sigma are unchanged.",
   "convention_reversal_verified": true,
+  "energy_condition_criterion_version": "isotropic-shell-2plus1-v1",
   "energy_condition_identities": {
     "DEC": "sigma>=|p_s|",
     "NEC": "sigma+p_s>=0",

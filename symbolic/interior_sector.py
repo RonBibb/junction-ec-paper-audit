@@ -4,6 +4,7 @@ from __future__ import annotations
 import sympy as sp
 
 from common import write_json
+from energy_condition_criteria import CRITERION_VERSION, evaluate
 
 
 def derive():
@@ -58,6 +59,7 @@ def derive():
     sigma_scaled = sp.simplify(-2 * positive_delta_theta)
     pressure_scaled = sp.simplify(delta_tau + positive_delta_theta)
     compatibility_residual = sp.simplify(Rddot - gamma**2 * Bddot)
+    energy_conditions = evaluate(sigma_scaled, pressure_scaled, strict=True)
 
     return {
         "sector": "F<0 future-infalling timelike shell",
@@ -103,13 +105,8 @@ def derive():
             "sigma_scaled_by_c4_over_8piG": str(sigma_scaled),
             "pressure_scaled_by_c4_over_8piG": str(pressure_scaled),
             "equation_of_state_residual": str(sp.simplify(2 * pressure_scaled - sigma_scaled)),
-            "NEC": bool(sp.simplify(sigma_scaled + pressure_scaled).is_positive),
-            "WEC": bool(sigma_scaled.is_positive and (sigma_scaled + pressure_scaled).is_positive),
-            "DEC": bool(sp.simplify(sigma_scaled - abs(pressure_scaled)).is_positive),
-            "SEC": bool(
-                (sigma_scaled + pressure_scaled).is_positive
-                and pressure_scaled.is_positive
-            ),
+            "energy_condition_criterion_version": CRITERION_VERSION,
+            **energy_conditions,
         },
         "both_density_signs_verified": {row["sigma_sign"] for row in witnesses}
         == {"positive", "negative"},

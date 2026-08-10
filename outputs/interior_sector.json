@@ -14,6 +14,7 @@
     "WEC": true,
     "Xdot": "0",
     "compatibility_residual": "0",
+    "energy_condition_criterion_version": "isotropic-shell-2plus1-v1",
     "equation_of_state_residual": "0",
     "pressure_scaled_by_c4_over_8piG": "-sqrt(14)/2 + 3*sqrt(10)/5",
     "sigma_scaled_by_c4_over_8piG": "-sqrt(14) + 6*sqrt(10)/5"

@@ -4,7 +4,7 @@
 configuration files, nine derivation ledgers, ten symbolic/audit modules, two numerical
 reproduction programs, eleven test files containing 20 checks, thirteen JSON outputs,
 execution logs, `RESULTS.md`, `FAILURE_REGISTER.md`, and this packet.  
-**Highest completed gate:** **JEC8**  
+**Highest completed gate:** **JEC9**  
 **Outcome:** **JEC-A — six-result derivational closure**
 
 ## Gate ledger
@@ -20,6 +20,7 @@ execution logs, `RESULTS.md`, `FAILURE_REGISTER.md`, and this packet.
 | JEC6 | Pass | N2, the tight repeat, and all 54 perturbation runs reproduce with residuals inside tolerance. |
 | JEC7 | Pass | TEST 008's exact unit chain and numerical calibration reproduce. |
 | JEC8 | Pass | Every abstract, theorem, figure, and conclusion claim has artifacts, domain, status, control, limitation, and permitted/prohibited wording. |
+| JEC9 | Pass | Every shell energy-condition result is recomputed from the single executable intrinsic (2+1)-dimensional criterion set; module-local boolean definitions are rejected. |
 
 ## Working results
 
@@ -141,7 +142,7 @@ From `junction-ec-paper-audit/` run:
 ```
 
 The command regenerates every output and runs 20 checks. The accepted run returned JEC-A and
-JEC0–JEC8 pass.
+JEC0–JEC9 pass.
 
 > Derivational paper closure is not evidence for a bounce, nonsingular child universe,
 > parent–child transition, mass transfer, time reversal, or empirical validity.

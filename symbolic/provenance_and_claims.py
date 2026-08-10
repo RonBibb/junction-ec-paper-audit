@@ -158,7 +158,7 @@ def claims():
         {
             "id": "ABSTRACT",
             "type": "abstract",
-            "claim": "Seven scoped control results form a coherent junction-and-controls record if JEC0-JEC8 pass.",
+            "claim": "Seven scoped control results form a coherent junction-and-controls record if JEC0-JEC9 pass.",
             "artifact": "all TEST 022 outputs and results/ARBITER_PACKET.md",
             "assumptions_domain": "union of explicitly printed R1-R7 domains",
             "epistemic_status": "paper eligibility only; not empirical validation",

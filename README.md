@@ -27,7 +27,7 @@ turning-point limits, and an ingoing Eddington–Finkelstein comparison.
 ## Repository identity
 
 - **Result:** `JEC-A` — six scoped junction/Einstein–Cartan derivations close
-  through JEC8 with 20 checks, making the bounded technical paper eligible for
+  through JEC9 with 37 unit tests, making the bounded technical paper eligible for
   novelty review and drafting.
 - **Scope:** The result does not establish a bounce, nonsingular child universe,
   transfer mechanism, or universal junction no-go theorem.

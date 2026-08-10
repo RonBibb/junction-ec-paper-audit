@@ -2,7 +2,9 @@
 
 ## Outcome: JEC-A — six-result derivational closure
 
-All gates JEC0–JEC8 pass. The scoped Junction–Einstein–Cartan controls paper is eligible for
+All gates JEC0–JEC9 pass. JEC9 independently recomputes every reported shell energy-condition
+boolean from one executable (2+1)-dimensional criterion set and rejects module-local boolean
+definitions. The scoped Junction–Einstein–Cartan controls paper is eligible for
 novelty review and drafting. This is a derivational and reproduction result, not a claim that
 a child universe or physical transition exists.
 
