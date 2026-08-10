@@ -6,6 +6,7 @@ test_declared_criteria_drive_generated_outputs (test_energy_condition_consistenc
 test_no_symbolic_module_defines_local_condition_booleans (test_energy_condition_consistency.EnergyConditionConsistencyTest.test_no_symbolic_module_defines_local_condition_booleans) ... ok
 test_n2_and_original_outputs (test_event_reproduction.EventReproductionTest.test_n2_and_original_outputs) ... ok
 test_numerical_controls (test_event_reproduction.EventReproductionTest.test_numerical_controls) ... ok
+test_compatible_bulk_density_and_longitudinal_nec (test_interior_sector.InteriorSectorTest.test_compatible_bulk_density_and_longitudinal_nec) ... ok
 test_compatible_witness_satisfies_all_shell_energy_conditions (test_interior_sector.InteriorSectorTest.test_compatible_witness_satisfies_all_shell_energy_conditions) ... ok
 test_exact_positive_density_interval (test_interior_sector.InteriorSectorTest.test_exact_positive_density_interval) ... ok
 test_regular_future_infalling_witness (test_interior_sector.InteriorSectorTest.test_regular_future_infalling_witness) ... ok
@@ -37,6 +38,6 @@ test_horizon_is_not_turning_point (test_turning_point.TurningPointTest.test_hori
 test_unsolved_exterior_limit (test_turning_point.TurningPointTest.test_unsolved_exterior_limit) ... ok
 
 ----------------------------------------------------------------------
-Ran 37 tests in 0.448s
+Ran 38 tests in 0.451s
 
 OK

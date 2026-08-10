@@ -40,6 +40,20 @@ class InteriorSectorTest(unittest.TestCase):
         self.assertTrue(witness["DEC"])
         self.assertTrue(witness["SEC"])
 
+    def test_compatible_bulk_density_and_longitudinal_nec(self):
+        witness = load("interior_sector.json")["ordinary_matter_witness"]
+        self.assertEqual(witness["bulk_kappa_rho"], "7/5")
+        self.assertEqual(
+            witness["bulk_kappa_rho_plus_p_chi"],
+            "31/20 - 6*sqrt(35)/25",
+        )
+        self.assertTrue(witness["bulk_density_positive"])
+        self.assertTrue(witness["bulk_longitudinal_NEC"])
+        self.assertEqual(
+            witness["bulk_transverse_NEC"],
+            "undetermined without dH_A/dt_C",
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

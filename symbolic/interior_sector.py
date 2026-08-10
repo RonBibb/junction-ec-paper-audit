@@ -60,6 +60,10 @@ def derive():
     pressure_scaled = sp.simplify(delta_tau + positive_delta_theta)
     compatibility_residual = sp.simplify(Rddot - gamma**2 * Bddot)
     energy_conditions = evaluate(sigma_scaled, pressure_scaled, strict=True)
+    H_B = Bdot
+    bulk_rho = sp.simplify(H_B**2 + 1)
+    bulk_p_chi = sp.simplify(-(2 * Bddot + H_B**2 + 1))
+    bulk_longitudinal_nec = sp.simplify(bulk_rho + bulk_p_chi)
 
     return {
         "sector": "F<0 future-infalling timelike shell",
@@ -106,6 +110,12 @@ def derive():
             "pressure_scaled_by_c4_over_8piG": str(pressure_scaled),
             "equation_of_state_residual": str(sp.simplify(2 * pressure_scaled - sigma_scaled)),
             "energy_condition_criterion_version": CRITERION_VERSION,
+            "bulk_kappa_rho": str(bulk_rho),
+            "bulk_kappa_p_chi": str(bulk_p_chi),
+            "bulk_kappa_rho_plus_p_chi": str(bulk_longitudinal_nec),
+            "bulk_density_positive": bool(bulk_rho.is_positive),
+            "bulk_longitudinal_NEC": bool(bulk_longitudinal_nec.is_positive),
+            "bulk_transverse_NEC": "undetermined without dH_A/dt_C",
             **energy_conditions,
         },
         "both_density_signs_verified": {row["sigma_sign"] for row in witnesses}

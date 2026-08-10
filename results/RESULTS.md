@@ -85,7 +85,9 @@ Misner–Sharp ordering. With
 \(\Delta K_\tau=2a\), where
 \(a=3\sqrt{10}/5-\sqrt{14}/2>0\), and \(p_s=\sigma/2>0\).
 NEC, WEC, DEC, and the intrinsic \(2+1\)-dimensional shell SEC are all strictly
-satisfied. This is a local timelike classification and
+satisfied. The compatible KS bulk data have \(\kappa\rho=7/5>0\) and
+\(\kappa(\rho+p_\chi)=31/20-6\sqrt{35}/25>0\); the transverse bulk NEC remains
+undetermined until \(dH_A/dt_C\) is specified. This is a local timelike classification and
 surface-data witness, not a dynamical or global transition result.
 
 ## Reproduced independent controls
