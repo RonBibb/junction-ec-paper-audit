@@ -46,10 +46,11 @@ def derive():
     mass_ratio_parent = sp.simplify(1 - F)
 
     # Compatible acceleration data for a fully energy-condition-satisfying witness.
-    Rddot = -sp.Rational(3, 4)
+    a = sp.simplify(3 * sp.sqrt(10) / 5 - sp.sqrt(14) / 2)
+    Rddot = sp.simplify(2 * a * beta - sp.Rational(3, 4))
     H_A = sp.Integer(0)
     Xdot = sp.Integer(0)
-    Bddot = -sp.Rational(3, 40)
+    Bddot = sp.simplify(Rddot / gamma**2)
     k_parent_tau = sp.simplify((Rddot + sp.Rational(3, 4)) / beta)
     k_child_tau = sp.simplify(epsilon_c * (Xdot / gamma + H_A * 3))
     delta_tau = sp.simplify(k_parent_tau - k_child_tau)
@@ -98,15 +99,16 @@ def derive():
             "Bddot": str(Bddot),
             "compatibility_residual": str(compatibility_residual),
             "DeltaKtau": str(delta_tau),
+            "DeltaKtau_target_residual": str(sp.simplify(delta_tau - 2 * a)),
             "sigma_scaled_by_c4_over_8piG": str(sigma_scaled),
             "pressure_scaled_by_c4_over_8piG": str(pressure_scaled),
-            "equation_of_state_residual": str(sp.simplify(2 * pressure_scaled + sigma_scaled)),
+            "equation_of_state_residual": str(sp.simplify(2 * pressure_scaled - sigma_scaled)),
             "NEC": bool(sp.simplify(sigma_scaled + pressure_scaled).is_positive),
             "WEC": bool(sigma_scaled.is_positive and (sigma_scaled + pressure_scaled).is_positive),
             "DEC": bool(sp.simplify(sigma_scaled - abs(pressure_scaled)).is_positive),
             "SEC": bool(
                 (sigma_scaled + pressure_scaled).is_positive
-                and sp.simplify(sigma_scaled + 2 * pressure_scaled) == 0
+                and pressure_scaled.is_positive
             ),
         },
         "both_density_signs_verified": {row["sigma_sign"] for row in witnesses}

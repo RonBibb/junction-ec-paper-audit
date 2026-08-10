@@ -35,6 +35,6 @@ test_horizon_is_not_turning_point (test_turning_point.TurningPointTest.test_hori
 test_unsolved_exterior_limit (test_turning_point.TurningPointTest.test_unsolved_exterior_limit) ... ok
 
 ----------------------------------------------------------------------
-Ran 35 tests in 0.416s
+Ran 35 tests in 0.428s
 
 OK

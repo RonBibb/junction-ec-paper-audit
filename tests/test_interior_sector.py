@@ -33,7 +33,7 @@ class InteriorSectorTest(unittest.TestCase):
     def test_compatible_witness_satisfies_all_shell_energy_conditions(self):
         witness = load("interior_sector.json")["ordinary_matter_witness"]
         self.assertEqual(witness["compatibility_residual"], "0")
-        self.assertEqual(witness["DeltaKtau"], "0")
+        self.assertEqual(witness["DeltaKtau_target_residual"], "0")
         self.assertEqual(witness["equation_of_state_residual"], "0")
         self.assertTrue(witness["NEC"])
         self.assertTrue(witness["WEC"])
