@@ -47,6 +47,9 @@ def main():
         and interior["witness"]["EF_future"]
         and interior["witness"]["EF_proper_time_residual"] == "0"
         and interior["witness"]["EF_normal_target_residual"] == "0"
+        and interior["witness"]["misner_sharp_order_reversed"]
+        and all(interior["ordinary_matter_witness"][key] for key in ("NEC", "WEC", "DEC", "SEC"))
+        and interior["ordinary_matter_witness"]["compatibility_residual"] == "0"
         and len(ordinary) == 2
         and israel["convention_reversal_verified"]
         and all(row["WEC"] == "violated" and row["DEC"] == "violated" for row in ordinary)

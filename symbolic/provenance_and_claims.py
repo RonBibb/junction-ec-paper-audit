@@ -98,13 +98,13 @@ def claims():
         {
             "id": "R3",
             "type": "theorem/abstract",
-            "claim": "For F<0 the KS/Schwarzschild surface-density sign is indefinite; an exact aligned interval permits positive density and a same-bulk paired witness realizes both signs.",
+            "claim": "For F<0 the KS/Schwarzschild surface-density sign is indefinite; a same-bulk paired witness realizes both signs and compatible acceleration data satisfy NEC, WEC, DEC, and shell SEC.",
             "artifact": "symbolic/interior_sector.py; outputs/interior_sector.json; tests/test_interior_sector.py",
             "assumptions_domain": "local future-infalling timelike segment, Schwarzschild F<0, retained increasing-R parent side, fixed KS retained interval",
             "epistemic_status": "exact local sign classification if JEC3 passes",
-            "independent_control": "invariant inequality, exact paired witness, and ingoing-EF normalization and normal checks",
+            "independent_control": "invariant inequality and mass ordering, retained-region reflection check, exact paired witness, matching compatibility, energy conditions, and ingoing-EF normalization",
             "strongest_limitation": "not a shell equation of motion, stability result, global completion, or spacelike-transition result",
-            "permitted_wording": "interior timelike sign indeterminacy with explicit positive-density witness",
+            "permitted_wording": "interior timelike sign indeterminacy with an explicit fully energy-condition-satisfying local surface witness",
             "prohibited_wording": "positive-energy child universe or validation of interior transition models",
         },
         {

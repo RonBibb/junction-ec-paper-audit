@@ -76,8 +76,12 @@ The exact paired witness at \(R=1\), \(F=-1/2\), \(\dot R=-2\),
 \(\epsilon_P=+1\), and \(\epsilon_C=-1\) gives \(\sigma>0\) for \(X=3\) and
 \(\sigma<0\) for \(X=-3\), while preserving the same local bulk gradient norms and
 retained-side gluing. Ingoing Eddington–Finkelstein normalization, future orientation, and
-the increasing-\(R\) normal all close exactly. This is a local timelike sign classification,
-not a dynamical or global transition result.
+the increasing-\(R\) normal all close exactly. The positive witness reverses the exterior
+Misner–Sharp ordering. With \(\ddot R=-3/4\), \(H_A=\dot X=0\), and
+\(d^2B/dt_C^2=-3/40\), matching compatibility gives \(\Delta K_\tau=0\) and
+\(p_s=-\sigma/2\). NEC, WEC, and DEC are strictly satisfied, and the intrinsic shell SEC is
+satisfied with \(\sigma+2p_s=0\) saturated. This is a local timelike classification and
+surface-data witness, not a dynamical or global transition result.
 
 ## Reproduced independent controls
 

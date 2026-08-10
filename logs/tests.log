@@ -4,6 +4,7 @@ test_child_components (test_c1_two_methods.C1TwoMethodsTest.test_child_component
 test_parent_components (test_c1_two_methods.C1TwoMethodsTest.test_parent_components) ... ok
 test_n2_and_original_outputs (test_event_reproduction.EventReproductionTest.test_n2_and_original_outputs) ... ok
 test_numerical_controls (test_event_reproduction.EventReproductionTest.test_numerical_controls) ... ok
+test_compatible_witness_satisfies_all_shell_energy_conditions (test_interior_sector.InteriorSectorTest.test_compatible_witness_satisfies_all_shell_energy_conditions) ... ok
 test_exact_positive_density_interval (test_interior_sector.InteriorSectorTest.test_exact_positive_density_interval) ... ok
 test_regular_future_infalling_witness (test_interior_sector.InteriorSectorTest.test_regular_future_infalling_witness) ... ok
 test_same_bulk_pair_realizes_both_density_signs (test_interior_sector.InteriorSectorTest.test_same_bulk_pair_realizes_both_density_signs) ... ok
@@ -34,6 +35,6 @@ test_horizon_is_not_turning_point (test_turning_point.TurningPointTest.test_hori
 test_unsolved_exterior_limit (test_turning_point.TurningPointTest.test_unsolved_exterior_limit) ... ok
 
 ----------------------------------------------------------------------
-Ran 34 tests in 0.422s
+Ran 35 tests in 0.416s
 
 OK

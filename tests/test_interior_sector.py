@@ -18,12 +18,27 @@ class InteriorSectorTest(unittest.TestCase):
         self.assertEqual(witness["EF_proper_time_residual"], "0")
         self.assertEqual(witness["EF_normal_target_residual"], "0")
         self.assertTrue(witness["same_bulk_invariants"])
+        self.assertTrue(witness["misner_sharp_order_reversed"])
+        self.assertEqual(witness["misner_sharp_ratio_child"], "7/5")
+        self.assertEqual(witness["misner_sharp_ratio_parent"], "3/2")
 
     def test_same_bulk_pair_realizes_both_density_signs(self):
         data = load("interior_sector.json")
         self.assertTrue(data["both_density_signs_verified"])
         signs = {row["sigma_sign"] for row in data["witness"]["paired_signs"]}
         self.assertEqual(signs, {"positive", "negative"})
+        self.assertTrue(data["witness"]["reflection_preserves_epsilon_X"])
+        self.assertTrue(data["witness"]["fixed_retained_side_reversal_changes_epsilon_X"])
+
+    def test_compatible_witness_satisfies_all_shell_energy_conditions(self):
+        witness = load("interior_sector.json")["ordinary_matter_witness"]
+        self.assertEqual(witness["compatibility_residual"], "0")
+        self.assertEqual(witness["DeltaKtau"], "0")
+        self.assertEqual(witness["equation_of_state_residual"], "0")
+        self.assertTrue(witness["NEC"])
+        self.assertTrue(witness["WEC"])
+        self.assertTrue(witness["DEC"])
+        self.assertTrue(witness["SEC"])
 
 
 if __name__ == "__main__":

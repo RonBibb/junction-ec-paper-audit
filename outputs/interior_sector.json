@@ -2,6 +2,21 @@
   "aligned_condition_residual": "-Rdot**2 + X**2*f + f",
   "both_density_signs_verified": true,
   "interval_derivation_verified": true,
+  "ordinary_matter_witness": {
+    "Bddot": "-3/40",
+    "DEC": true,
+    "DeltaKtau": "0",
+    "H_A": "0",
+    "NEC": true,
+    "Rddot": "-3/4",
+    "SEC": true,
+    "WEC": true,
+    "Xdot": "0",
+    "compatibility_residual": "0",
+    "equation_of_state_residual": "0",
+    "pressure_scaled_by_c4_over_8piG": "-3*sqrt(10)/5 + sqrt(14)/2",
+    "sigma_scaled_by_c4_over_8piG": "-sqrt(14) + 6*sqrt(10)/5"
+  },
   "positive_density_interval": "f<Rdot^2<(1+X^2)f with epsilon_C X Rdot>0",
   "sector": "F<0 future-infalling timelike shell",
   "witness": {
@@ -16,10 +31,14 @@
     "Rdot": "-2",
     "epsilon_C": -1,
     "epsilon_P": 1,
+    "fixed_retained_side_reversal_changes_epsilon_X": true,
     "gamma": "sqrt(10)",
     "gradient_norm_child": "-2/5",
     "gradient_norm_parent": "-1/2",
     "m": "3/4",
+    "misner_sharp_order_reversed": true,
+    "misner_sharp_ratio_child": "7/5",
+    "misner_sharp_ratio_parent": "3/2",
     "paired_signs": [
       {
         "DeltaKtheta_times_R": "-3*sqrt(10)/5 + sqrt(14)/2",
@@ -36,6 +55,7 @@
         "sigma_sign": "negative"
       }
     ],
+    "reflection_preserves_epsilon_X": true,
     "same_bulk_invariants": true
   }
 }
